@@ -19,6 +19,7 @@ def crear_matriz(n: int = 3, grupos: list = None):
 
 	print(df)
 	print("=" * (10 * len(grupos) + 2))
+	print()
 	return df
 
 def eliminar_grupo(df: pd.DataFrame, grupo_eliminado: int):
@@ -38,4 +39,4 @@ def guerreros_markov():
 
 if __name__ == "__main__":
 	df = crear_matriz(n=4)
-	print(eliminar_grupo(df, 2))
+	df = eliminar_grupo(df, 2)
